@@ -15,3 +15,10 @@ class Dakhl(models.Model):
     nam=models.ForeignKey(User)
     def __str__(self):
         return "{}".format(self.mablagh)
+class Kharj(models.Model):
+    tozih=models.CharField(max_length=100)
+    tarikh=models.DateTimeField()
+    mablagh=models.BigIntegerField()
+    nam=models.ForeignKey(User)
+    def __str__(self):
+        return "{}".format(self.mablagh)
